@@ -1,0 +1,48 @@
+{
+  "name": "dsh-feynman-answer",
+  "version": "1.0.0",
+  "description": "把「费曼五段式」作为解释型回答的默认骨架：先给结论、编号列论点、总结、启示与未来行动、最后奥卡姆剃刀压成一句话。A DSH bundle that ships the feynman-answer skill, which makes the five-part Feynman-style answer the default shape for explanatory replies.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "skill",
+    "skills",
+    "feynman",
+    "answer-format",
+    "explanation",
+    "teaching"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "moophone"
+  },
+  "homepage": "https://github.com/moophone/dsh-feynman-answer#readme",
+  "repository": {
+    "url": "git+https://github.com/moophone/dsh-feynman-answer.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/moophone/dsh-feynman-answer/issues"
+  },
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "exports": {
+    ".": "./package.json",
+    "./icon": "./icon.svg",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "skills",
+    "README.md",
+    "cordis.patch.yml",
+    "icon.svg"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
