@@ -1,6 +1,7 @@
-# feynman-answer 不注入任何 loader 行。
+# feynman-answer 不注入任何 loader 行 —— 它的全部载荷是技能
+# （skills/feynman-answer/SKILL.md），DSH 会自己发现并挂载 bundle 里的 skills/。
 #
-# 这个 bundle 的全部载荷是 skills/feynman-answer/SKILL.md（DSH 会把它挂到
-# <dshHome>/skills/feynman-answer）。DSH 的 profile 补丁里没有能注入全局回复指令的
-# 配置位，所以「以后回答都按费曼五段式」不可能做成一条 loader 行 —— 让它保持为空，
-# 就不会碰用户 profile 里任何手写的行。
+# 这个文件故意是空数组：DSH 的插件安装器要求 bundle patch 必须是
+# 「顶层 YAML 数组」，注释块会被判为无效并拒绝安装。空数组 = 不注入任何行，
+# 也就不会碰用户 profile 里任何手写的 loader 行。
+[]
